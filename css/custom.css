@@ -3,43 +3,57 @@
     src: url('../fonts/OpenSans-Regular.ttf');
 }
 
-@font-face {
-    font-family: 'Open Sans Light';
-    src: url('../fonts/OpenSans-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Open Sans Bold';
-    src: url('../fonts/OpenSans-Bold.ttf');
-}
-
 body{
   font-family: 'Open Sans', sans-serif;
-}
-
-#mainTitle{
-  font-size: 48pt;
-  font-weight: 700;
-  font-family: 'Oswald', sans-serif;
-  color: rgb(62,61,63);
-  margin: 1.5rem 0 1.5rem 0;
-}
-
-#homePusher{
-  background: rgb(220,234,245);
 }
 
 .fullscreen{
   min-height: 100vh;
 }
 
-.grid.fullscreen{
-  padding-top: 50px;
-  padding-bottom: 50px;
+#mainSegment{
+  background: white;
 }
 
-@media only screen and (max-device-width: 600px){
-  #mainTitle{
-    font-size: 24pt;
+#pictureSegment{
+  background-image: url('../images/bg.jpg');
+  /* background-image: url('../images/tiabanyu-min.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+#mapSegment{
+  background: white;
+}
+
+.main.grid > .row > .column{
+  padding: 0;
+}
+
+#mainGrid > .row{
+  padding-bottom: 0;
+}
+
+#secondGrid > .row{
+  padding: 0;
+}
+
+#countD, #countH, #countM, #countS{
+  font-family: 'Staatliches';
+  font-size: 28pt;
+  opacity: 0.75;
+}
+
+.countDesc{
+  font-family: 'Staatliches';
+  font-size: 18pt;
+  opacity: 0.4;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+@media only screen and (max-device-width: 600px) {
+  #mainGrid > .row > .ten.wide.column{
+    display: none;
   }
 }
