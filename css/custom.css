@@ -66,4 +66,9 @@ body{
   #mainGrid > .row > .ten.wide.column{
     display: none;
   }
+
+  #logoImage{
+    opacity: 0.75;
+    width: 90%;
+  }
 }
