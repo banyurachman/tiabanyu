@@ -9,27 +9,53 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/semantic.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
   <!-- JS -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/semantic.min.js"></script>
   <!-- Title -->
   <title>Tia & Banyu</title>
-  <link rel="icon" href="images/icon.jpg" />
+  <link rel="icon" href="images/heart.png" />
 
   <script type="text/javascript">
     if (location.protocol != 'https:') {
       location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
   </script>
 </head>
 
 <body>
 
-  <div class="ui main grid" id="mainGrid">
+  <div class="ui main stackable grid" id="mainGrid">
     <div class="row">
       <div class="six wide column">
         <div class="ui vertical stripe very basic segment fullscreen" id="mainSegment">
-
+          <div class="ui middle aligned stackable grid fullscreen">
+            <div class="row">
+              <div class="sixteen wide center aligned column">
+                <span id="countD">0</span>
+                <span class="countDesc">
+                  d
+                </span>
+                <span id="countH">0</span>
+                <span class="countDesc">
+                  h
+                </span>
+                <span id="countM">0</span>
+                <span class="countDesc">
+                  m
+                </span>
+                <span id="countS">0</span>
+                <span class="countDesc">
+                  s
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="ten wide column">
@@ -40,15 +66,21 @@
     </div>
   </div>
 
-  <div class="ui main grid" id="secondGrid">
+  <!-- <div class="ui main grid" id="secondGrid">
     <div class="row">
       <div class="sixteen wide column">
-        <div class="ui vertical stripe very basic segment fullscreen" id="mapSegment">
-
+        <div class="ui vertical stripe very basic segment center aligned fullscreen" id="mapSegment">
+          <div class="ui middle aligned stackable grid fullscreen">
+            <div class="row">
+              <div class="sixteen wide center aligned column">
+                lorem
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="js/main.js"></script>
 </body>
