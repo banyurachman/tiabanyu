@@ -3,6 +3,11 @@
     src: url('../fonts/OpenSans-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'cwc';
+    src: url('../fonts/cwc.otf');
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -44,6 +49,11 @@ body{
   opacity: 0.75;
 }
 
+#logoImage{
+  opacity: 0.75;
+  width: 70%;
+}
+
 .countDesc{
   font-family: 'Staatliches';
   font-size: 18pt;
@@ -55,5 +65,10 @@ body{
 @media only screen and (max-device-width: 600px) {
   #mainGrid > .row > .ten.wide.column{
     display: none;
+  }
+
+  #logoImage{
+    opacity: 0.75;
+    width: 90%;
   }
 }
