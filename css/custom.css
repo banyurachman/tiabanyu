@@ -124,6 +124,7 @@ body{
   }
 
   .fullscreen{
-    min-height: auto;
+    min-height: auto !important;
+    height: auto !important;
   }
 }
