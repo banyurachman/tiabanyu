@@ -10,18 +10,16 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to bottom, #ffffff, #dfe2e0);
+  background-attachment: fixed;
 }
 
 .fullscreen{
   min-height: 100vh;
 }
 
-#mainSegment{
-  background: white;
-}
-
 #pictureSegment{
-  background-image: url('../images/bg.jpg');
+  background-image: url('../images/bg2.jpg');
   /* background-image: url('../images/tiabanyu-min.jpg'); */
   background-size: cover;
   background-position: center;
@@ -47,11 +45,15 @@ body{
   font-family: 'Staatliches';
   font-size: 28pt;
   opacity: 0.75;
+  color: white;
 }
 
 #logoImage{
-  opacity: 0.75;
-  width: 70%;
+  width: 400px;
+}
+
+#qrImage{
+  width: 100px;
 }
 
 .countDesc{
@@ -60,6 +62,41 @@ body{
   opacity: 0.4;
   margin-right: 10px;
   margin-left: 2px;
+  color: white;
+}
+
+#content{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#content p{
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+#content h1{
+  margin: 20px;
+  margin-top: 15px;
+  font-family: 'cwc', sans-serif;
+  font-size: 36pt;
+  opacity: 0.9;
+}
+
+#content h3{
+  margin: 0px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+#content .desc{
+  opacity: 0.5;
+  font-size: 9pt;
+  margin-top: 5px;
+}
+
+#decorImage{
+  width: 75px;
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -68,7 +105,10 @@ body{
   }
 
   #logoImage{
-    opacity: 0.75;
     width: 90%;
+  }
+
+  #qrImage{
+    width: 150px;
   }
 }
