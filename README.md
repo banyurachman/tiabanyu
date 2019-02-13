@@ -1,2 +1,2 @@
-# banyurachman.github.io
-This is my GitHub page. Welcome! -ABR
+# tiaayu.banyurachman.com
+This is our couple website's repo :D

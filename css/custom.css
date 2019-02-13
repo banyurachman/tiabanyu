@@ -4,42 +4,111 @@
 }
 
 @font-face {
-    font-family: 'Open Sans Light';
-    src: url('../fonts/OpenSans-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Open Sans Bold';
-    src: url('../fonts/OpenSans-Bold.ttf');
+    font-family: 'cwc';
+    src: url('../fonts/cwc.otf');
 }
 
 body{
   font-family: 'Open Sans', sans-serif;
-}
-
-#mainTitle{
-  font-size: 48pt;
-  font-weight: 700;
-  font-family: 'Oswald', sans-serif;
-  color: rgb(62,61,63);
-  margin: 1.5rem 0 1.5rem 0;
-}
-
-#homePusher{
-  background: rgb(220,234,245);
+  background-image: linear-gradient(to bottom, #ffffff, #dfe2e0);
+  background-attachment: fixed;
 }
 
 .fullscreen{
   min-height: 100vh;
 }
 
-.grid.fullscreen{
-  padding-top: 50px;
-  padding-bottom: 50px;
+#pictureSegment{
+  background-image: url('../images/bg2.jpg');
+  /* background-image: url('../images/tiabanyu-min.jpg'); */
+  background-size: cover;
+  background-position: center;
 }
 
-@media only screen and (max-device-width: 600px){
-  #mainTitle{
-    font-size: 24pt;
+#mapSegment{
+  background: white;
+}
+
+.main.grid > .row > .column{
+  padding: 0;
+}
+
+#mainGrid > .row{
+  padding-bottom: 0;
+}
+
+#secondGrid > .row{
+  padding: 0;
+}
+
+#countD, #countH, #countM, #countS{
+  font-family: 'Staatliches';
+  font-size: 28pt;
+  opacity: 0.75;
+  color: white;
+}
+
+#logoImage{
+  width: 400px;
+}
+
+#qrImage{
+  width: 100px;
+}
+
+.countDesc{
+  font-family: 'Staatliches';
+  font-size: 18pt;
+  opacity: 0.4;
+  margin-right: 10px;
+  margin-left: 2px;
+  color: white;
+}
+
+#content{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#content p{
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+#content h1{
+  margin: 20px;
+  margin-top: 15px;
+  font-family: 'cwc', sans-serif;
+  font-size: 36pt;
+  opacity: 0.9;
+}
+
+#content h3{
+  margin: 0px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+#content .desc{
+  opacity: 0.5;
+  font-size: 9pt;
+  margin-top: 5px;
+}
+
+#decorImage{
+  width: 75px;
+}
+
+@media only screen and (max-device-width: 600px) {
+  #mainGrid > .row > .ten.wide.column{
+    display: none;
+  }
+
+  #logoImage{
+    width: 90%;
+  }
+
+  #qrImage{
+    width: 150px;
   }
 }
