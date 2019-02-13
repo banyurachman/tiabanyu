@@ -44,7 +44,7 @@ body{
 #countD, #countH, #countM, #countS{
   font-family: 'Staatliches';
   font-size: 28pt;
-  opacity: 0.75;
+  opacity: 0.9;
   color: white;
 }
 
@@ -59,7 +59,7 @@ body{
 .countDesc{
   font-family: 'Staatliches';
   font-size: 18pt;
-  opacity: 0.4;
+  opacity: 0.6;
   margin-right: 10px;
   margin-left: 2px;
   color: white;
@@ -81,6 +81,7 @@ body{
   font-family: 'cwc', sans-serif;
   font-size: 36pt;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 #content h3{
@@ -106,9 +107,23 @@ body{
 
   #logoImage{
     width: 90%;
+    margin-top: 50px;
   }
 
   #qrImage{
     width: 150px;
+  }
+
+  #content{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #content h3{
+    font-size: 11pt;
+  }
+
+  .fullscreen{
+    min-height: auto;
   }
 }
