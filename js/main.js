@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   startCountdown(1552179600000);
-  $('#mainTitle').transition('set looping').transition('tada', '1000ms');
+  // $('#content h1').transition('set looping').transition('tada', '1500ms');
 
   function startCountdown(countDownDate = 0) {
 
